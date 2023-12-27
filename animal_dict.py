@@ -18,5 +18,9 @@ class Animal_dict:
         for key, value in self.animal_dict.items():
             print(key, value)
 
+    def print_animal_command(self):
+        for value in self.animal_dict.values():
+            print(value[3])
+
 
 

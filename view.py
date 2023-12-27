@@ -1,4 +1,3 @@
-import presenter
 
 def main_menu():
     # TODO текст в отдельный файл
@@ -14,18 +13,17 @@ def main_menu():
         match choice:
             case "1":
                 name = input("Введите имя животного ")
-                type_animal = input("Введите тип животного ")
-                birthday = input("Введите день рождение животного ")
+                #type_animal = input("Введите тип животного ")
+                #birthday = input("Введите день рождение животного ")
                 command = input("Введите команды животного ")
-                presenter.add_animal_p(name, type_animal, birthday, command)
             case "2":
                 print("Выбран 2 пункт меню")
             case "3":
-                presenter.print_animal_p()
+                print("3 пунк")
             case "4":
-                presenter.print_animal_p()
+                print("4 пун")
             case "5":
-                print("Выбран 9 пункт меню")
+                print("Выбран 5 пункт меню")
                 flag = False
             case _:
                 print("Неверный пункт меню")

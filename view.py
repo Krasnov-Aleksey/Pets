@@ -13,15 +13,15 @@ def main_menu():
         match choice:
             case "1":
                 name = input("Введите имя животного ")
-                #type_animal = input("Введите тип животного ")
-                #birthday = input("Введите день рождение животного ")
+                type_animal = input("Введите тип животного ")
+                birthday = input("Введите день рождение животного ")
                 command = input("Введите команды животного ")
             case "2":
                 print("Выбран 2 пункт меню")
             case "3":
-                print("3 пунк")
+                print("3 пункт")
             case "4":
-                print("4 пун")
+                print("4 пункт")
             case "5":
                 print("Выбран 5 пункт меню")
                 flag = False

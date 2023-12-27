@@ -1,4 +1,4 @@
-
+import presenter
 def main_menu():
     # TODO текст в отдельный файл
     flag = True
@@ -12,16 +12,22 @@ def main_menu():
         choice = input("Введите пункт меню ")
         match choice:
             case "1":
-                name = input("Введите имя животного ")
-                type_animal = input("Введите тип животного ")
-                birthday = input("Введите день рождение животного ")
-                command = input("Введите команды животного ")
+                name = input("Введите имя домашнего животного ")
+                type_animal = "Домашнее животное"
+                birthday = 1 #input("Введите день рождение животного ")
+                command = 1 #input("Введите команды животного ")
+                presenter.add_animal_pr(name, type_animal, birthday, command)
             case "2":
-                print("Выбран 2 пункт меню")
+                name = input("Введите имя вьючного животного ")
+                type_animal = "Вьючное животное"
+                birthday = 2 #input("Введите день рождение животного ")
+                command = 2 #input("Введите команды животного ")
+                presenter.add_animal_pr(name, type_animal, birthday, command)
+
             case "3":
-                print("3 пункт")
+                pass
             case "4":
-                print("4 пункт")
+                presenter.print_animal_pr()
             case "5":
                 print("Выбран 5 пункт меню")
                 flag = False

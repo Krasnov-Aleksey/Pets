@@ -1,0 +1,30 @@
+cat >Pets
+dog 
+cat
+hamster
+cat >Packanimals
+horse
+camel
+donkey
+touch test
+cat Pets > test
+cat Packanimals >> test
+mv test HumanFriends
+mkdir test
+mv HumanFriends ./test
+sudo apt install mysql-server-8.0
+sudo wget https://download.virtualbox.org/virtualbox/7.0.12/virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+sudo dpkg -i virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+sudo apt -f install -y
+sudo dpkg -r virtualbox-7.0
+
+
+
+
+
+
+
+
+
+
+

@@ -3,8 +3,8 @@ from animaldict import AnimalDict
 animal_dict = AnimalDict()
 
 
-def add_animal_pr(name, type_animal, birthday, command):
-    animal_dict.add_animal(name, type_animal, birthday, command)
+def add_animal_pr(name, type_animal, command):
+    animal_dict.add_animal(name, type_animal, command)
 
 
 def print_animal_pr():

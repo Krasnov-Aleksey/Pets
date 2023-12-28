@@ -1,6 +1,6 @@
-from animal_dict import Animal_dict
+from animaldict import AnimalDict
 
-animal_dict = Animal_dict()
+animal_dict = AnimalDict()
 
 
 def add_animal_pr(name, type_animal, birthday, command):
@@ -13,4 +13,8 @@ def print_animal_pr():
 
 def print_animal_command_pr():
     animal_dict.print_animal_command()
+
+
+def add_animal_command_pr(id_animal, command):
+    animal_dict.add_animal_command(id_animal, command)
 

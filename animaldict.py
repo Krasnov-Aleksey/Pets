@@ -1,7 +1,7 @@
 from animal import Animal
 
 
-class Animal_dict:
+class AnimalDict:
     def __init__(self):
         self.animal_dict = {}
 
@@ -21,6 +21,11 @@ class Animal_dict:
     def print_animal_command(self):
         for value in self.animal_dict.values():
             print(value[3])
+
+    def add_animal_command(self, id_animal, command):
+        for key in self.animal_dict.keys():
+            print(key)
+        print(id_animal, command)
 
 
 

@@ -29,7 +29,9 @@ def main_menu():
             case "4":
                 presenter.print_animal_command_pr()
             case "5":
-                pass
+                id_animal = input("Введите id животного ")
+                command = input("Введите новую команду животному ")
+                presenter.add_animal_command_pr(id_animal, command)
             case "6":
                 flag = False
             case _:

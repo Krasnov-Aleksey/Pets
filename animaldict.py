@@ -5,7 +5,6 @@ class AnimalDict:
     def __init__(self):
         self.animal_dict = {}
 
-
     def add_animal(self, name, type_animal, birthday, command):
         animal = Animal(name=name, type_animal=type_animal, birthday=birthday, command=command)
         key_animal = 0
@@ -18,14 +17,16 @@ class AnimalDict:
         for key, value in self.animal_dict.items():
             print(key, value)
 
-    def print_animal_command(self):
-        for value in self.animal_dict.values():
-            print(value[3])
+    def print_animal_command(self, id_animal):
+        for key, value in self.animal_dict.items():
+            if id_animal in key:
+                print(f"{key} {value[3]}")
+                return
+        print("Id не найден")
 
     def add_animal_command(self, id_animal, command):
-        for key in self.animal_dict.keys():
-            print(key)
-        print(id_animal, command)
-
-
-
+        for key, value in self.animal_dict.items():
+            if id_animal in key:
+                value[3] = f"{value[3]}, {command}"
+                return
+        print("Id не найден")

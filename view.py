@@ -27,7 +27,8 @@ def main_menu():
             case "3":
                 presenter.print_animal_pr()
             case "4":
-                presenter.print_animal_command_pr()
+                id_animal = input("Введите id животного ")
+                presenter.print_animal_command_pr(id_animal)
             case "5":
                 id_animal = input("Введите id животного ")
                 command = input("Введите новую команду животному ")

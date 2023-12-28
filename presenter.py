@@ -11,8 +11,8 @@ def print_animal_pr():
     animal_dict.print_animal()
 
 
-def print_animal_command_pr():
-    animal_dict.print_animal_command()
+def print_animal_command_pr(id_animal):
+    animal_dict.print_animal_command(id_animal)
 
 
 def add_animal_command_pr(id_animal, command):
